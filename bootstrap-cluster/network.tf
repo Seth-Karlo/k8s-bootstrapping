@@ -94,5 +94,5 @@ resource "aws_security_group" "sg" {
 }
 
 output "addresses" {
-  value = "Master IP addresses are ${join(", ", aws_instance.master.*.public_ip)} and worker IP addresses are ${join(", ", aws_instance.worker.*.public_ip)}"
+  value = "Master IP addresses are ${join(", ", aws_instance.master.*.public_ip)}"
 }
